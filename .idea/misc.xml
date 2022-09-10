@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.124" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/drawable/circle.xml" value="0.177" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/drawable/ic_launcher_background.xml" value="0.124" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/activity_caffe_americo.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/activity_cold_coffee.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/activity_hot_coffee.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/activity_soft_drinks.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/activity_turnpage.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/xmllayout.xml" value="0.253125" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.155" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.16" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

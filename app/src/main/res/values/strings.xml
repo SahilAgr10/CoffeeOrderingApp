@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Develop with java</string>
+    <string name="order_summary_email_subject" />
+    <string name="your_name_please">Your Name Please</string>
+    <string name="_1">1</string>
+    <string name="toppings">TOPPINGS</string>
+    <string name="whipped_cream">Whipped_cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="price">Price</string>
+    <string name="_20">₹20</string>
+    <string name="order">order</string>
+    <string name="order_summary">Order Summary</string>
+
+
+</resources>

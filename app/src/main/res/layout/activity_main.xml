@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fillViewport="true">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="411dp"
+                android:layout_height="187dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/screenshot__37_" />
+
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textSize="19dp"
+                android:padding="4dp"
+                android:layout_marginBottom="30dp"
+                android:text="Greetings , "/>
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:orientation="vertical"
+                    android:src="@drawable/capecinco"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:text="Hot Coffee"
+                    android:textSize="24dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="19dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_width="220dp"
+                    android:onClick="hotCoffee"/>
+                <ImageView
+                    android:onClick="hotCoffee"
+                    app:srcCompat="@drawable/baseline_navigate_next_black_36"
+                    android:layout_marginTop="19dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:orientation="vertical"
+                    android:src="@drawable/greenlatte"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="19dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Cold Coffee"
+                    android:onClick="coldCoffee"
+                    android:textSize="24dp" />
+                <ImageView
+                    android:onClick="coldCoffee"
+                    app:srcCompat="@drawable/baseline_navigate_next_black_36"
+                    android:layout_marginTop="19dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:orientation="vertical"
+                    android:src="@drawable/hazelnut"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:text="Indian Beverages"
+                    android:textSize="24dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="19dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:onClick="indianTea"
+                    android:layout_width="220dp" />
+                <ImageView
+                    android:onClick="indianTea"
+                    app:srcCompat="@drawable/baseline_navigate_next_black_36"
+                    android:layout_marginTop="19dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:orientation="vertical"
+                    android:src="@drawable/images__3_"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:text="Day Meal Combos"
+                    android:onClick="softDrinks"
+                    android:textSize="24dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="19dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_width="220dp"/>
+                <ImageView
+                    android:onClick="softDrinks"
+                    app:srcCompat="@drawable/baseline_navigate_next_black_36"
+                    android:layout_marginTop="19dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:paddingStart="14dp"
+                android:paddingBottom="15dp"
+                android:text="Recommended Products"
+                android:textColor="#000000"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    app:srcCompat="@drawable/img"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/imagethere"
+                    android:layout_width="125dp"
+                    android:layout_height="147dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:layout_height="147dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="30dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Green Tea Latte"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+                        <ImageView
+                            app:srcCompat="@drawable/baseline_add_black_18"
+                            android:padding="7dp"
+                            android:background="#ff9900"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"/>
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            app:srcCompat="@drawable/rating"
+                            android:layout_gravity="top"
+                            android:scaleType="centerCrop"
+                            android:layout_width="95dp"
+                            android:layout_height="20dp"/>
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:text= "₹265"
+                        android:textSize="19dp"
+                        android:paddingTop="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="Our dark, Rich in flavour espresso balanced with steamed milk and a light layer of foam."
+                        android:layout_width="match_parent"
+                        android:maxLines="3"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    app:srcCompat="@drawable/images__3_"
+                    android:scaleType="centerCrop"
+                    android:layout_width="125dp"
+                    android:layout_height="147dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:layout_height="147dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="30dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Day Meal"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+                        <ImageView
+                            app:srcCompat="@drawable/baseline_add_black_18"
+                            android:padding="7dp"
+                            android:background="#ff9900"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            app:srcCompat="@drawable/rating"
+                            android:layout_gravity="top"
+                            android:scaleType="centerCrop"
+                            android:layout_width="95dp"
+                            android:layout_height="20dp"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:text= "₹425"
+                        android:textSize="19dp"
+                        android:paddingTop="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="Flatted with Cheese and Indian mixture taste with Coke for a complete Snack."
+                        android:layout_width="match_parent"
+                        android:maxLines="3"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:paddingStart="14dp"
+                android:paddingBottom="15dp"
+                android:text="Connect with Top brands :"
+                android:textColor="#000000"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="82dp"
+                    android:onClick="zomato"
+                    android:layout_margin="15dp"
+                    android:layout_height="122dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:src="@drawable/zomatoo"
+                    tools:ignore="MissingConstraints" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="82dp"
+                    android:onClick="Swiggy"
+                    android:layout_margin="15dp"
+                    android:layout_height="122dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:src="@drawable/swigw"
+                    tools:ignore="MissingConstraints" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="82dp"
+                    android:onClick="MacD"
+                    android:layout_margin="15dp"
+                    android:layout_height="122dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:src="@drawable/macda"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="142dp"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="82dp"
+                    android:onClick="Starbuks"
+                    android:layout_height="144dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:src="@drawable/sahil1"
+                    tools:ignore="MissingConstraints" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="82dp"
+                    android:onClick="Baristo"
+                    android:layout_margin="15dp"
+                    android:layout_height="122dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:src="@drawable/bariss"
+                    tools:ignore="MissingConstraints" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="82dp"
+                    android:onClick="Dominoz"
+                    android:layout_margin="15dp"
+                    android:layout_height="122dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:src="@drawable/dominoz"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@color/black"
+                android:layout_height="197dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="20dp"
+                android:textAlignment="viewEnd"
+                app:srcCompat="@drawable/screenshot__38_"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
