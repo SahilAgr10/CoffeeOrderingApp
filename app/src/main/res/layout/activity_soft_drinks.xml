@@ -44,7 +44,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
