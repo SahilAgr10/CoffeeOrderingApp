@@ -86,4 +86,15 @@ public class MainActivity extends AppCompatActivity {
         );
         startActivity(i);
     }
+
+    public void Additem(View view) {
+        Intent intent = new Intent(MainActivity.this,GreenLatte.class);
+        startActivity(intent);
+    }
+
+    public void orderMeal(View view) {
+        Intent intent = new Intent(this,DayMeal.class);
+        startActivity(intent);
+
+    }
 }

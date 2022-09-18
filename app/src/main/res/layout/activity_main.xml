@@ -42,7 +42,7 @@
                 android:textSize="19dp"
                 android:padding="4dp"
                 android:layout_marginBottom="30dp"
-                android:text="Greetings , "/>
+                android:text="@string/greetings"/>
 
             <LinearLayout
                 android:layout_marginStart="10dp"
@@ -60,13 +60,14 @@
 
                 <TextView
                     android:text="Hot Coffee"
-                    android:textSize="24dp"
+                    android:textSize="24sp"
                     android:layout_height="65dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="19dp"
                     android:fontFamily="sans-serif-condensed"
                     android:layout_width="220dp"
                     android:onClick="hotCoffee"/>
+
                 <ImageView
                     android:onClick="hotCoffee"
                     app:srcCompat="@drawable/baseline_navigate_next_black_36"
@@ -95,7 +96,7 @@
                     android:fontFamily="sans-serif-condensed"
                     android:text="Cold Coffee"
                     android:onClick="coldCoffee"
-                    android:textSize="24dp" />
+                    android:textSize="24sp" />
                 <ImageView
                     android:onClick="coldCoffee"
                     app:srcCompat="@drawable/baseline_navigate_next_black_36"
@@ -118,7 +119,7 @@
 
                 <TextView
                     android:text="Indian Beverages"
-                    android:textSize="24dp"
+                    android:textSize="24sp"
                     android:layout_height="65dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="19dp"
@@ -148,7 +149,7 @@
                 <TextView
                     android:text="Day Meal Combos"
                     android:onClick="softDrinks"
-                    android:textSize="24dp"
+                    android:textSize="24sp"
                     android:layout_height="65dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="19dp"
@@ -201,8 +202,10 @@
                             android:fontFamily="sans-serif-condensed"
                             android:text="Green Tea Latte"
                             android:textColor="#000000"
-                            android:textSize="20dp" />
+                            android:textSize="20sp" />
                         <ImageView
+                            android:id="@+id/plus1"
+                            android:onClick="Additem"
                             app:srcCompat="@drawable/baseline_add_black_18"
                             android:padding="7dp"
                             android:background="#ff9900"
@@ -231,7 +234,7 @@
                     </LinearLayout>
                     <TextView
                         android:text= "₹265"
-                        android:textSize="19dp"
+                        android:textSize="19sp"
                         android:paddingTop="6dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
@@ -274,6 +277,7 @@
                             android:textColor="#000000"
                             android:textSize="20dp" />
                         <ImageView
+                            android:onClick="orderMeal"
                             app:srcCompat="@drawable/baseline_add_black_18"
                             android:padding="7dp"
                             android:background="#ff9900"

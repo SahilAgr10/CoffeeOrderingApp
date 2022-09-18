@@ -14,21 +14,27 @@
         android:theme="@style/Theme.DevelopWithJava"
         tools:targetApi="31">
         <activity
-            android:name=".CaffeAmerico"
-            android:label="Caffe Americano"
+            android:name=".DayMeal"
             android:exported="false" />
+        <activity
+            android:name=".GreenLatte"
+            android:exported="false" />
+        <activity
+            android:name=".CaffeAmerico"
+            android:exported="false"
+            android:label="Caffe Americano" />
         <activity
             android:name=".softDrinks"
-            android:label="Day Meal Combos"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Day Meal Combos" />
         <activity
             android:name=".indianTea"
-            android:label="Indian Bevrages"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Indian Bevrages" />
         <activity
             android:name=".coldCoffee"
-            android:label="Cold Coffee"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Cold Coffee" />
         <activity
             android:name=".hotCoffee"
             android:exported="false"
@@ -39,8 +45,8 @@
             android:label="Order Summary" />
         <activity
             android:name=".MainActivity"
-            android:icon="@drawable/capecinco"
-            android:exported="true">
+            android:exported="true"
+            android:icon="@drawable/capecinco">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

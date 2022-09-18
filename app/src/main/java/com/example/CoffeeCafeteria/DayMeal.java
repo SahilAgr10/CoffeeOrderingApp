@@ -9,28 +9,28 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.NumberFormat;
 
-public class CaffeAmerico extends AppCompatActivity {
+public class DayMeal extends AppCompatActivity {
     int quantity = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_caffe_americo);
+        setContentView(R.layout.activity_day_meal);
     }
     public void increment(View view) {
-        if(quantity == 9) {
-            Toast.makeText(this, "Accepts only 9 Coffees per Order ", Toast.LENGTH_SHORT).show();
+        if(quantity == 5) {
+            Toast.makeText(this, "Accepts only 5 Orders  ", Toast.LENGTH_SHORT).show();
             return;
         }
         quantity = quantity + 1;
         display(quantity);
-        displayPrice(quantity * 235);
+        displayPrice(quantity * 425);
     }
 
 
     public void decrement(View view) {
         if(quantity==0){
-            Toast.makeText(this,"Select atleast 1 coffee",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Select atleast 1 combo",Toast.LENGTH_SHORT).show();
             return;
         }
 

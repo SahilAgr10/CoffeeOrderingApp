@@ -10,6 +10,7 @@
     <string name="_20">₹20</string>
     <string name="order">order</string>
     <string name="order_summary">Order Summary</string>
+    <string name="greetings">Greetings ,</string>
 
 
 </resources>

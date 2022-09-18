@@ -9,14 +9,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.NumberFormat;
 
-public class CaffeAmerico extends AppCompatActivity {
-    int quantity = 1;
+public class GreenLatte extends AppCompatActivity {
+    int quantity=1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_caffe_americo);
+        setContentView(R.layout.activity_green_latte);
     }
+
     public void increment(View view) {
         if(quantity == 9) {
             Toast.makeText(this, "Accepts only 9 Coffees per Order ", Toast.LENGTH_SHORT).show();
@@ -53,6 +54,7 @@ public class CaffeAmerico extends AppCompatActivity {
         TextView priceTextView = (TextView) findViewById(R.id.quantity_text);
         priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
     }
+
     public void submitOrder(View view) {
         Toast.makeText(this, "Your Order is placed", Toast.LENGTH_SHORT).show();
     }
