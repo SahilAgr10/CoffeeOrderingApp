@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.124" />
         <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/drawable/circle.xml" value="0.177" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/drawable/ic_baseline_account_balance_wallet_24.xml" value="0.177" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.177" />
         <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/drawable/ic_launcher_background.xml" value="0.124" />
         <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/activity_caffe_americo.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/activity_cold_coffee.xml" value="0.25416666666666665" />
@@ -15,7 +17,11 @@
         <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/activity_soft_drinks.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/activity_turnpage.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/menueditor.xml" value="0.253125" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/menufile.xml" value="0.253125" />
         <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/layout/xmllayout.xml" value="0.253125" />
+        <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/menu/menu.xml" value="0.264" />
         <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.155" />
         <entry key="..\:/Users/agraw/AndroidStudioProjects/Developwithjava/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.16" />
       </map>

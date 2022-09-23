@@ -4,12 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.text.NumberFormat;
 
 public class softDrinks extends AppCompatActivity {
     int quantity = 1;
@@ -83,43 +79,5 @@ public class softDrinks extends AppCompatActivity {
 
     }
 
-    public void display(int number) {
-        TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
-        quantityTextView.setText("" + number);
-    }
-    /**
-     * This method displays the given price on the screen.
-     */
-    public void displayPrice(int number) {
-        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
-        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
-    }
-    /**
-     * This method is called when the plus button is clicked.
-     */
-    public void increment(View view) {
-        if(quantity == 9) {
-            Toast.makeText(this, "Accepts only 9 Coffees per Order ", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        quantity = quantity + 1;
-        display(quantity);
-        displayPrice(quantity * 20);
-    }
 
-
-    public void decrement(View view) {
-        if(quantity==0){
-            Toast.makeText(this,"Select atleast 1 coffee",Toast.LENGTH_SHORT).show();
-            return;
-        }
-
-        quantity = quantity - 1;
-        display(quantity);
-        displayPrice(quantity*20);
-    }
-    public void displayMessage(String message) {
-        TextView priceTextView = (TextView) findViewById(R.id.order);
-        priceTextView.setText(message);
-    }
 }

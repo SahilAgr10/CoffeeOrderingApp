@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.DevelopWithJava" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="android:textColor">@color/black</item>
-        <!-- Primary brand color. -->
+        <!-- Primary brand color.#ff9900 -->
         <item name="colorPrimary">#ff9900</item>
         <item name="colorPrimaryVariant">#000000</item>
         <item name="colorOnPrimary">@color/white</item>

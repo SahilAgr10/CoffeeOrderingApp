@@ -7,17 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:fillViewport="true">
-
-
-
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="0dp">
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <LinearLayout
@@ -34,20 +32,20 @@
 
 
             <TextView
-                android:layout_marginStart="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:textColor="#000000"
-                android:textSize="19dp"
-                android:padding="4dp"
                 android:layout_marginBottom="30dp"
-                android:text="@string/greetings"/>
+                android:padding="4dp"
+                android:text="@string/greetings"
+                android:textColor="#000000"
+                android:textSize="19dp" />
 
             <LinearLayout
-                android:layout_marginStart="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:orientation="horizontal">
 
                 <com.mikhaellopez.circularimageview.CircularImageView
@@ -59,26 +57,27 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:text="Hot Coffee"
-                    android:textSize="24sp"
+                    android:layout_width="220dp"
                     android:layout_height="65dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="19dp"
                     android:fontFamily="sans-serif-condensed"
-                    android:layout_width="220dp"
-                    android:onClick="hotCoffee"/>
+                    android:onClick="hotCoffee"
+                    android:text="Hot Coffee"
+                    android:textSize="24sp" />
 
                 <ImageView
-                    android:onClick="hotCoffee"
-                    app:srcCompat="@drawable/baseline_navigate_next_black_36"
-                    android:layout_marginTop="19dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:onClick="hotCoffee"
+                    app:srcCompat="@drawable/baseline_navigate_next_black_36" />
             </LinearLayout>
+
             <LinearLayout
-                android:layout_marginStart="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:orientation="horizontal">
 
                 <com.mikhaellopez.circularimageview.CircularImageView
@@ -94,20 +93,22 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="19dp"
                     android:fontFamily="sans-serif-condensed"
+                    android:onClick="coldCoffee"
                     android:text="Cold Coffee"
-                    android:onClick="coldCoffee"
                     android:textSize="24sp" />
+
                 <ImageView
-                    android:onClick="coldCoffee"
-                    app:srcCompat="@drawable/baseline_navigate_next_black_36"
-                    android:layout_marginTop="19dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:onClick="coldCoffee"
+                    app:srcCompat="@drawable/baseline_navigate_next_black_36" />
             </LinearLayout>
+
             <LinearLayout
-                android:layout_marginStart="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:orientation="horizontal">
 
                 <com.mikhaellopez.circularimageview.CircularImageView
@@ -118,25 +119,27 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:text="Indian Beverages"
-                    android:textSize="24sp"
+                    android:layout_width="220dp"
                     android:layout_height="65dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="19dp"
                     android:fontFamily="sans-serif-condensed"
                     android:onClick="indianTea"
-                    android:layout_width="220dp" />
+                    android:text="Indian Beverages"
+                    android:textSize="24sp" />
+
                 <ImageView
-                    android:onClick="indianTea"
-                    app:srcCompat="@drawable/baseline_navigate_next_black_36"
-                    android:layout_marginTop="19dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:onClick="indianTea"
+                    app:srcCompat="@drawable/baseline_navigate_next_black_36" />
             </LinearLayout>
+
             <LinearLayout
-                android:layout_marginStart="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:orientation="horizontal">
 
                 <com.mikhaellopez.circularimageview.CircularImageView
@@ -147,21 +150,23 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:text="Day Meal Combos"
-                    android:onClick="softDrinks"
-                    android:textSize="24sp"
+                    android:layout_width="220dp"
                     android:layout_height="65dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="19dp"
                     android:fontFamily="sans-serif-condensed"
-                    android:layout_width="220dp"/>
-                <ImageView
                     android:onClick="softDrinks"
-                    app:srcCompat="@drawable/baseline_navigate_next_black_36"
-                    android:layout_marginTop="19dp"
+                    android:text="Day Meal Combos"
+                    android:textSize="24sp" />
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:onClick="softDrinks"
+                    app:srcCompat="@drawable/baseline_navigate_next_black_36" />
             </LinearLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -176,26 +181,27 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="16dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="16dp">
 
                 <ImageView
-                    app:srcCompat="@drawable/img"
-                    android:scaleType="centerCrop"
                     android:id="@+id/imagethere"
                     android:layout_width="125dp"
-                    android:layout_height="147dp" />
+                    android:layout_height="147dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/img" />
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:paddingLeft="10dp"
-                    android:layout_height="147dp">
+                    android:layout_height="147dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
+
                         <TextView
                             android:layout_width="180dp"
                             android:layout_height="30dp"
@@ -203,18 +209,17 @@
                             android:text="Green Tea Latte"
                             android:textColor="#000000"
                             android:textSize="20sp" />
+
                         <ImageView
                             android:id="@+id/plus1"
-                            android:onClick="Additem"
-                            app:srcCompat="@drawable/baseline_add_black_18"
-                            android:padding="7dp"
-                            android:background="#ff9900"
                             android:layout_width="wrap_content"
-                            android:layout_height="30dp"/>
+                            android:layout_height="30dp"
+                            android:background="#ff9900"
+                            android:onClick="Additem"
+                            android:padding="7dp"
+                            app:srcCompat="@drawable/baseline_add_black_18" />
 
                     </LinearLayout>
-
-
 
 
                     <LinearLayout
@@ -224,25 +229,27 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            app:srcCompat="@drawable/rating"
+                            android:layout_width="95dp"
+                            android:layout_height="20dp"
                             android:layout_gravity="top"
                             android:scaleType="centerCrop"
-                            android:layout_width="95dp"
-                            android:layout_height="20dp"/>
+                            app:srcCompat="@drawable/rating" />
 
 
                     </LinearLayout>
+
                     <TextView
-                        android:text= "₹265"
-                        android:textSize="19sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:paddingTop="6dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:text="₹265"
+                        android:textSize="19sp" />
+
                     <TextView
-                        android:text="Our dark, Rich in flavour espresso balanced with steamed milk and a light layer of foam."
                         android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:maxLines="3"
-                        android:layout_height="wrap_content"/>
+                        android:text="Our dark, Rich in flavour espresso balanced with steamed milk and a light layer of foam." />
                 </LinearLayout>
 
             </LinearLayout>
@@ -250,25 +257,26 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="16dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="16dp">
 
                 <ImageView
-                    app:srcCompat="@drawable/images__3_"
-                    android:scaleType="centerCrop"
                     android:layout_width="125dp"
-                    android:layout_height="147dp" />
+                    android:layout_height="147dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/images__3_" />
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:paddingLeft="10dp"
-                    android:layout_height="147dp">
+                    android:layout_height="147dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
+
                         <TextView
                             android:layout_width="180dp"
                             android:layout_height="30dp"
@@ -276,13 +284,14 @@
                             android:text="Day Meal"
                             android:textColor="#000000"
                             android:textSize="20dp" />
+
                         <ImageView
-                            android:onClick="orderMeal"
-                            app:srcCompat="@drawable/baseline_add_black_18"
-                            android:padding="7dp"
-                            android:background="#ff9900"
                             android:layout_width="wrap_content"
-                            android:layout_height="30dp"/>
+                            android:layout_height="30dp"
+                            android:background="#ff9900"
+                            android:onClick="orderMeal"
+                            android:padding="7dp"
+                            app:srcCompat="@drawable/baseline_add_black_18" />
 
                     </LinearLayout>
 
@@ -294,24 +303,26 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            app:srcCompat="@drawable/rating"
+                            android:layout_width="95dp"
+                            android:layout_height="20dp"
                             android:layout_gravity="top"
                             android:scaleType="centerCrop"
-                            android:layout_width="95dp"
-                            android:layout_height="20dp"/>
+                            app:srcCompat="@drawable/rating" />
 
                     </LinearLayout>
+
                     <TextView
-                        android:text= "₹425"
-                        android:textSize="19dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:paddingTop="6dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:text="₹425"
+                        android:textSize="19dp" />
+
                     <TextView
-                        android:text="Flatted with Cheese and Indian mixture taste with Coke for a complete Snack."
                         android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:maxLines="3"
-                        android:layout_height="wrap_content"/>
+                        android:text="Flatted with Cheese and Indian mixture taste with Coke for a complete Snack." />
                 </LinearLayout>
 
             </LinearLayout>
@@ -332,32 +343,33 @@
                 android:layout_height="122dp"
                 android:layout_marginStart="10dp"
                 android:orientation="horizontal">
+
                 <com.mikhaellopez.circularimageview.CircularImageView
                     android:layout_width="82dp"
-                    android:onClick="zomato"
-                    android:layout_margin="15dp"
                     android:layout_height="122dp"
+                    android:layout_margin="15dp"
                     android:layout_weight="1"
+                    android:onClick="zomato"
                     android:orientation="vertical"
                     android:src="@drawable/zomatoo"
                     tools:ignore="MissingConstraints" />
 
                 <com.mikhaellopez.circularimageview.CircularImageView
                     android:layout_width="82dp"
-                    android:onClick="Swiggy"
-                    android:layout_margin="15dp"
                     android:layout_height="122dp"
+                    android:layout_margin="15dp"
                     android:layout_weight="1"
+                    android:onClick="Swiggy"
                     android:orientation="vertical"
                     android:src="@drawable/swigw"
                     tools:ignore="MissingConstraints" />
 
                 <com.mikhaellopez.circularimageview.CircularImageView
                     android:layout_width="82dp"
-                    android:onClick="MacD"
-                    android:layout_margin="15dp"
                     android:layout_height="122dp"
+                    android:layout_margin="15dp"
                     android:layout_weight="1"
+                    android:onClick="MacD"
                     android:orientation="vertical"
                     android:src="@drawable/macda"
                     tools:ignore="MissingConstraints" />
@@ -373,31 +385,31 @@
 
                 <com.mikhaellopez.circularimageview.CircularImageView
                     android:layout_width="82dp"
-                    android:onClick="Starbuks"
                     android:layout_height="144dp"
-                    android:scaleType="centerCrop"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
+                    android:onClick="Starbuks"
                     android:orientation="vertical"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/sahil1"
                     tools:ignore="MissingConstraints" />
 
                 <com.mikhaellopez.circularimageview.CircularImageView
                     android:layout_width="82dp"
-                    android:onClick="Baristo"
-                    android:layout_margin="15dp"
                     android:layout_height="122dp"
+                    android:layout_margin="15dp"
                     android:layout_weight="1"
+                    android:onClick="Baristo"
                     android:orientation="vertical"
                     android:src="@drawable/bariss"
                     tools:ignore="MissingConstraints" />
 
                 <com.mikhaellopez.circularimageview.CircularImageView
                     android:layout_width="82dp"
-                    android:onClick="Dominoz"
-                    android:layout_margin="15dp"
                     android:layout_height="122dp"
+                    android:layout_margin="15dp"
                     android:layout_weight="1"
+                    android:onClick="Dominoz"
                     android:orientation="vertical"
                     android:src="@drawable/dominoz"
                     tools:ignore="MissingConstraints" />
@@ -407,10 +419,10 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:background="@color/black"
                 android:layout_height="197dp"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="20dp"
+                android:background="@color/black"
                 android:textAlignment="viewEnd"
                 app:srcCompat="@drawable/screenshot__38_"
                 tools:ignore="RtlCompat" />

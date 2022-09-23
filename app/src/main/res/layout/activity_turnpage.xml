@@ -33,4 +33,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/order" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="0dp"
+        android:paddingRight="20dp"
+        android:background="#ff9900"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:text="Add" />
+
+
+        <ImageView
+            android:id="@+id/plus1"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="40dp"
+            app:srcCompat="@drawable/baseline_add_black_18" />
+
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
