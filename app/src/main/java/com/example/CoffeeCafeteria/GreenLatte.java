@@ -11,31 +11,26 @@ import java.text.NumberFormat;
 
 public class GreenLatte extends AppCompatActivity {
     int quantity=1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_green_latte);
     }
-
     public void increment(View view) {
         if(quantity == 9) {
-            Toast.makeText(this, "Accepts only 9 Coffees per Order ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "9 Coffees per Order ", Toast.LENGTH_SHORT).show();
             return;
         }
         quantity = quantity + 1;
         display(quantity);
         displayPrice(quantity * 235);
     }
-
-
     public void decrement(View view) {
         if(quantity==0){
-            Toast.makeText(this,"Select atleast 1 coffee",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"minimum 1 coffee",Toast.LENGTH_SHORT).show();
             return;
         }
-
-        quantity = quantity - 1;
+        quantity -= 1;
         display(quantity);
         displayPrice(quantity*235);
     }
@@ -47,15 +42,11 @@ public class GreenLatte extends AppCompatActivity {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
     }
-    /**
-     * This method displays the given price on the screen.
-     */
     public void displayPrice(int number) {
         TextView priceTextView = (TextView) findViewById(R.id.quantity_text);
         priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
     }
-
     public void submitOrder(View view) {
-        Toast.makeText(this, "Your Order is placed", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Order is placed", Toast.LENGTH_SHORT).show();
     }
 }
