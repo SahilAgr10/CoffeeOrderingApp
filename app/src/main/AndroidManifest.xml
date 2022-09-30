@@ -9,11 +9,22 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="Coffee Shop"
-
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DevelopWithJava"
         tools:targetApi="31">
+        <activity
+            android:name=".h5"
+            android:exported="false" />
+        <activity
+            android:name=".h4"
+            android:exported="false" />
+        <activity
+            android:name=".h3"
+            android:exported="false" />
+        <activity
+            android:name=".h2"
+            android:exported="false" />
         <activity
             android:name=".DayMeal"
             android:exported="false" />
