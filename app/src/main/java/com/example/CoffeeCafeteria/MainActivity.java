@@ -1,5 +1,4 @@
 package com.example.CoffeeCafeteria;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,40 +11,31 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.CoffeeCafeteria.ui.login.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
-
     int quantity = 1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
-
-
     public void hotCoffee(View view) {
         Intent i = new Intent(this,hotCoffee.class);
         startActivity(i);
-
     }
-
     public void coldCoffee(View view) {
         Intent i = new Intent(this,coldCoffee.class);
         startActivity(i);
     }
-
     public void indianTea(View view) {
         Intent i = new Intent(this,indianTea.class);
         startActivity(i);
     }
-
     public void softDrinks(View view) {
         Intent i = new Intent(this,softDrinks.class);
         startActivity(i);
     }
-
     public void zomato(View view) {
         Intent i = new Intent(
                 Intent.ACTION_VIEW,
@@ -97,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
     public void orderMeal(View view) {
         Intent intent = new Intent(this,DayMeal.class);
         startActivity(intent);
-
     }
 
     @Override
@@ -112,6 +101,9 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.account_balancc:
                 Toast.makeText(this, "Account Balance ₹0", Toast.LENGTH_SHORT).show();
+            case R.id.account:
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

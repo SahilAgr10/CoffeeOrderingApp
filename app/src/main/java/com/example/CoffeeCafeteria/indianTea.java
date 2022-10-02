@@ -1,6 +1,9 @@
 package com.example.CoffeeCafeteria;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,5 +27,33 @@ public class indianTea extends AppCompatActivity {
         WordAdapter adapter = new WordAdapter(this,words);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                for(int i =0;i < 1;i++){
+                    if(position==0){
+                        Intent intent = new Intent(indianTea.this,CaffeAmerico.class);
+                        startActivity(intent);
+                    }
+                    if(position==1){
+                        Intent intent = new Intent(indianTea.this,h2.class);
+                        startActivity(intent);
+                    }
+                    if(position==2){
+                        Intent intent = new Intent(indianTea.this,h3.class);
+                        startActivity(intent);
+                    }
+                    if(position==3){
+                        Intent intent = new Intent(indianTea.this,GreenLatte.class);
+                        startActivity(intent);
+                    }
+                    if(position==4){
+                        Intent intent = new Intent(indianTea.this,h5.class);
+                        startActivity(intent);
+                    }
+                }
+
+            }
+        });
     }
 }

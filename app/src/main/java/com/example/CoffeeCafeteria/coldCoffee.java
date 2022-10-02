@@ -1,6 +1,9 @@
 package com.example.CoffeeCafeteria;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,15 +18,44 @@ public class coldCoffee extends AppCompatActivity {
         setContentView(R.layout.activity_cold_coffee);
 
         ArrayList<Word> words = new ArrayList<>();
-        words.add(new Word("Caffe Americano","52 votes","₹235","Rich, full-bodied espresso with hot water in true European style.",R.drawable.images__2_));
-        words.add(new Word("Cappuccino","38 votes","₹255","Dark, Rich in flavour espresso lies in wait under a smoothed and stretched layer of thick foam.",R.drawable.capecinco));
-        words.add(new Word("Caramel Macchiato","11 votes","₹320","\"Freshly steamed milk with vanilla-flavored syrup is marked with espresso and topped with caramel drizzle.",R.drawable.mochiyato));
-        words.add(new Word("Green Tea Latte","10 votes","₹265","\"Smooth and creamy matcha is lightly sweetened and served with steamed milk Hot",R.drawable.greenlatte));
-        words.add(new Word("Hazelnut Caffe Latte","5 votes","₹305","\"Our dark, rich espresso balanced with Hazelnut flavored syrup, steamed milk and a light layer of foam.",R.drawable.hazelnut));
+        words.add(new Word("White Mocha Frappuccino","52 votes","₹350","\"White chocolate Frappuccino is a blend of coffee, white chocolate sauce, milk and ice. .",R.drawable.c1));
+        words.add(new Word("Caramel Frappuccino","38 votes","₹355","\"A blend of coffee, sweet caramel syrup, milk and ice topped with whipped cream and a swirl of caramel drizzle",R.drawable.c2));
+        words.add(new Word("Java Chip Frappuccino","11 votes","₹335","We blend mocha sauce and Frappuccino chips with frappuccino roast coffee and milk and ice.",R.drawable.c3));
+        words.add(new Word("Vanilla Cream Frappuccino","10 votes","₹340",
+                "\"This rich and creamy blend of vanilla, milk and ice topped with whipped cream takes vanilla flavor to another leve",R.drawable.c4));
+        words.add(new Word("Iced Caramel Macchiato","5 votes","₹350","Freshly steamed milk with vanilla-flavored syrup is marked with espresso and topped with caramel drizzle. Iced ",R.drawable.c5));
 
         WordAdapter adapter = new WordAdapter(this,words);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                for(int i =0;i < 1;i++){
+                    if(position==0){
+                        Intent intent = new Intent(coldCoffee.this,CaffeAmerico.class);
+                        startActivity(intent);
+                    }
+                    if(position==1){
+                        Intent intent = new Intent(coldCoffee.this,h2.class);
+                        startActivity(intent);
+                    }
+                    if(position==2){
+                        Intent intent = new Intent(coldCoffee.this,h3.class);
+                        startActivity(intent);
+                    }
+                    if(position==3){
+                        Intent intent = new Intent(coldCoffee.this,GreenLatte.class);
+                        startActivity(intent);
+                    }
+                    if(position==4){
+                        Intent intent = new Intent(coldCoffee.this,h5.class);
+                        startActivity(intent);
+                    }
+                }
+
+            }
+        });
     }
 
 }

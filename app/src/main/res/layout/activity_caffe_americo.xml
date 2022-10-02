@@ -16,8 +16,7 @@
 
         <ImageView
             android:layout_margin="10dp"
-            app:srcCompat="@drawable/img"
-            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/images__2_"
             android:id="@+id/cup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -155,7 +154,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="0dp"
         android:backgroundTint="#033E3E"
         android:onClick="submitOrder"
         android:text="@string/order" />

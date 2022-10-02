@@ -40,28 +40,20 @@ public class hotCoffee extends AppCompatActivity {
                         Intent intent = new Intent(hotCoffee.this,h2.class);
                         startActivity(intent);
                     }
-                    if(position==1){
+                    if(position==2){
                         Intent intent = new Intent(hotCoffee.this,h3.class);
                         startActivity(intent);
                     }
-                    if(position==1){
-                        Intent intent = new Intent(hotCoffee.this,h4.class);
+                    if(position==3){
+                        Intent intent = new Intent(hotCoffee.this,GreenLatte.class);
                         startActivity(intent);
                     }
                     if(position==4){
                         Intent intent = new Intent(hotCoffee.this,h5.class);
                         startActivity(intent);
                     }
-
-
-
                 }
             }
         });
-
-
     }
-
-
-
 }
