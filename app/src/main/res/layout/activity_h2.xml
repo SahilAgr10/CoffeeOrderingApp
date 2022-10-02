@@ -159,11 +159,4 @@
         android:backgroundTint="#033E3E"
         android:onClick="submitOrder"
         android:text="@string/order" />
-
-
-
-
-
-
-
 </LinearLayout>

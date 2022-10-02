@@ -1,9 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".c4">
+    tools:context=".CaffeAmerico">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/img"
+            android:scaleType="centerCrop"
+            android:id="@+id/cup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/cup_name"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Caffe Americano"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <TextView
+
+        android:paddingTop="19dp"
+        android:paddingStart="19dp"
+        android:paddingBottom="1dp"
+        android:paddingRight="99dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Cart"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:textSize="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="19dp">
+
+        <TextView
+            android:id="@+id/cup1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Ca"
+            android:layout_marginEnd="19dp"
+            android:textStyle="normal"
+            android:textSize="24dp" />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#033E3E"
+            android:onClick="decrement"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="13dp"
+            android:text="@string/_1"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#033E3E"
+            android:onClick="increment"
+            android:text="+"
+            android:theme="@style/Button" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="49dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtotal"
+            android:layout_marginEnd="79dp"
+            android:textStyle="bold"
+            android:textSize="22dp" />
+        <TextView
+            android:id="@+id/cupPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="₹235"
+            android:layout_marginLeft="30dp"
+            android:textStyle="normal"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:text="@string/toppings"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/whipped_cream_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="24dp"
+        android:text="@string/whipped_cream"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <CheckBox
+        android:id="@+id/chocolate_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="24dp"
+        android:text="@string/chocolate"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#033E3E"
+        android:onClick="submitOrder"
+        android:text="@string/order" />
+</LinearLayout>

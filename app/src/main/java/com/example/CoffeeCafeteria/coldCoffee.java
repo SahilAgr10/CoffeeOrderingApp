@@ -33,23 +33,23 @@ public class coldCoffee extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 for(int i =0;i < 1;i++){
                     if(position==0){
-                        Intent intent = new Intent(coldCoffee.this,CaffeAmerico.class);
+                        Intent intent = new Intent(coldCoffee.this,c1.class);
                         startActivity(intent);
                     }
                     if(position==1){
-                        Intent intent = new Intent(coldCoffee.this,h2.class);
+                        Intent intent = new Intent(coldCoffee.this,c2.class);
                         startActivity(intent);
                     }
                     if(position==2){
-                        Intent intent = new Intent(coldCoffee.this,h3.class);
+                        Intent intent = new Intent(coldCoffee.this,c3.class);
                         startActivity(intent);
                     }
                     if(position==3){
-                        Intent intent = new Intent(coldCoffee.this,GreenLatte.class);
+                        Intent intent = new Intent(coldCoffee.this,c4.class);
                         startActivity(intent);
                     }
                     if(position==4){
-                        Intent intent = new Intent(coldCoffee.this,h5.class);
+                        Intent intent = new Intent(coldCoffee.this,c5.class);
                         startActivity(intent);
                     }
                 }
